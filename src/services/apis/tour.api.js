@@ -9,9 +9,15 @@ export const fetchSingleTour = (tourId) => ({
   method: "GET",
 });
 
-export const bookTour = (data) => ({
+export const bookTour1 = (data) => ({
   method: "POST",
   url: "/tour/booking",
+  data,
+});
+
+export const bookTour = (data) => ({
+  method: "POST",
+  url: "/order",
   data,
 });
 

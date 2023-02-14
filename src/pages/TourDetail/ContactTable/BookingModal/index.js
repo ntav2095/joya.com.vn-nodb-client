@@ -47,16 +47,20 @@ function BookingModal({ selectedDate, onHide, ...props }) {
       setIsLoading(true);
       await axios(
         bookTour({
-          tourId: tour._id,
-          firstname: values.firstname,
-          surname: values.surname,
-          email: values.email,
-          phone: values.phone,
-          gender: values.gender,
-          address: values.address,
-          adult: values.adult,
-          children: values.children,
-          departureDate: values.date,
+          name: `${tour.name} [${tour.code}]`,
+          type: "book-tour",
+          createdAt: Date.now(),
+          customer_info: {
+            firstname: values.firstname,
+            surname: values.surname,
+            email: values.email,
+            phone: values.phone,
+            gender: values.gender,
+            address: values.address,
+            adult: values.adult,
+            children: values.children,
+            departureDate: values.date,
+          },
         })
       );
       setIsSuccess(true);

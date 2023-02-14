@@ -21,8 +21,6 @@ function ContactTable({ tour, isLoading }) {
   const companyStatus = useSelector((state) => state.company.status);
   const company = useSelector((state) => state.company.company);
 
-  const pointOfDeparture = tour ? tour.journey.split("-")[0].trim() : "";
-
   const isLoadingContact =
     companyStatus === "idle" || companyStatus === "pending";
   const loadedContact = companyStatus === "succeeded";
@@ -70,7 +68,9 @@ function ContactTable({ tour, isLoading }) {
               </li>
               <li>
                 <span>{t("general.destinations")}: </span>
-                <strong>{tour.destinations_text}</strong>
+                <strong>
+                  {tour.destinations.map((item) => item.name).join(", ")}
+                </strong>
               </li>
               <li>
                 <span>{t("general.duration")}: </span>
@@ -87,7 +87,9 @@ function ContactTable({ tour, isLoading }) {
               </li>
               <li>
                 <span>{t("general.departurePoint")}: </span>
-                <strong>{pointOfDeparture}</strong>
+                <strong>
+                  {tour.start_at ? tour.start_at.name : tour.start_at_text}
+                </strong>
               </li>
             </ul>
 

@@ -92,7 +92,7 @@ export default function Footer() {
         },
         {
           url: "",
-          path: "/dieu-khoan/luu-y",
+          path: "/dieu-khoan/thong-tin-can-luu-y",
           label: t("footer.terms.content.notes"),
         },
         {
