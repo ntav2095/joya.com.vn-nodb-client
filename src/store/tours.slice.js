@@ -102,42 +102,26 @@ export const selectToursStatistic = (state) => {
       euTours
         .reduce((prev, cur) => [...prev, ...cur.destinations], [])
         .filter(
-          (dest) =>
-            (dest.country || dest.type === "country") &&
-            dest.continent.slug === "chau-au"
+          (dest) => dest.type === "country" && dest.continent === "europe"
         )
-        .map((dest) => {
-          if (dest.country)
-            return {
-              name: dest.country.name,
-              slug: dest.country.slug,
-            };
-
-          if (dest.type === "country")
-            return {
-              name: dest.name,
-              slug: dest.slug,
-            };
-        })
+        .map((dest) => ({
+          name: dest.name,
+          slug: dest.slug,
+        }))
     )
   );
 
   let vnProvinces = vnTours
     .reduce((prev, cur) => [...prev, ...cur.destinations], [])
-    .filter((dest) => dest.country.slug === "viet-nam")
-    .map((dest) => {
-      if ((dest.type === "city" && !dest.province) || dest.type === "province")
-        return {
-          name: dest.name,
-          slug: dest.slug,
-        };
-
-      if (dest.province)
-        return {
-          name: dest.province.name,
-          slug: dest.province.slug,
-        };
-    });
+    .filter(
+      (dest) =>
+        dest.region &&
+        (dest.type === "province" || (dest.type === "city" && !dest.province))
+    )
+    .map((dest) => ({
+      name: dest.name,
+      slug: dest.slug,
+    }));
 
   vnProvinces = Array.from(
     new Set(vnProvinces.map((item) => JSON.stringify(item)))
@@ -150,31 +134,16 @@ export const selectToursStatistic = (state) => {
   const euToursCatalogue = euCountries.map((country) => {
     const toursCount = euTours.filter((tour) =>
       tour.destinations.some(
-        (dest) =>
-          dest.country?.name === country.name ||
-          (dest.type === "country" && dest.name === country.name)
+        (dest) => dest.type === "country" && dest.slug === country.slug
       )
     ).length;
 
     return { place: country, toursCount };
   });
 
-  const matchesProvince = (tour, province) =>
-    tour.destinations.some((dest) => {
-      // xét 3 trường hợp
-      // 1: type === province: {... type: province, name: Đồng Nai }
-      // 2: type !== province: {... type: city, name: Biên Hòa, province: { type: province, name: Đồng Nai } }
-      // 3: thành phố trực thuộc trung ương: type === city, province === null: { type: city, province: null, name: TP Đà Nẵng }
-      return (
-        dest.province?.name === province.name ||
-        (dest.type === "province" && dest.name === province.name) ||
-        (dest.type === "city" && !dest.province && dest.name === province.name)
-      );
-    });
-
   const vnToursCatalogue = vnProvinces.map((province) => {
     const toursCount = vnTours.filter((tour) =>
-      matchesProvince(tour, province)
+      tour.destinations.some((dest) => dest.slug === province.slug)
     ).length;
 
     return { place: province, toursCount };

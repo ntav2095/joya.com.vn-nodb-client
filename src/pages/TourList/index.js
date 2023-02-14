@@ -114,7 +114,7 @@ function TourList() {
           }}
         />
       ),
-      id: tour._id,
+      id: tour.slug,
     }));
 
   const page_count = Math.ceil(total_tours.length / PAGE_SIZE);

@@ -10,7 +10,7 @@ import styles from "./Term.module.css";
 
 const TERM_ITEMS = new Map([
   [
-    "luu-y",
+    "thong-tin-can-luu-y",
     {
       code: "notes",
       title: {
@@ -63,37 +63,33 @@ const TERM_ITEMS = new Map([
 
 function Term() {
   // luu-y | dieu-kien-dang-ky | phuong-thuc-thanh-toan | chinh-sach-bao-mat | dieu-kien-dang-ky
-  const { typeOfTerm } = useParams();
+  const { slug } = useParams();
   const [sendRequest, isLoading, data, error, resetStates] = useAxios();
   const lang = useTranslation().i18n.language;
 
-  const delta = useMemo(
-    () => (data ? data.data.content : [{ insert: "/n" }]),
-    [data]
-  );
+  const delta = useMemo(() => (data ? data.data : [{ insert: "/n" }]), [data]);
 
-  const termItem = TERM_ITEMS.get(typeOfTerm);
-  const isCorrectCode = Boolean(termItem);
+  const termItem = TERM_ITEMS.get(slug);
 
   useEffect(() => {
-    if (isCorrectCode) {
+    if (termItem) {
       sendRequest(fetchSingleTerm(termItem.code));
     }
-  }, [typeOfTerm, lang, isCorrectCode]);
+  }, [lang, termItem]);
 
-  if (!isCorrectCode) {
+  if (!termItem) {
     return <ErrorPage code={404} message={"Page Not Found"} />;
   }
   return (
     <>
-      {!error && data && (
+      {!error && data && !isLoading && (
         <div className="container-lg py-5">
           <h1 className="text-center fs-3 mb-4">
-            {TERM_ITEMS.get(typeOfTerm).title[lang]}
+            {TERM_ITEMS.get(slug).title[lang]}
           </h1>
 
           <div className={styles.content + " bg-light border p-4"}>
-            <QuillReader className delta={delta} />
+            <QuillReader delta={delta} />
           </div>
         </div>
       )}
@@ -101,34 +97,14 @@ function Term() {
       {isLoading && (
         <div className="container-lg py-5">
           <h1 className="text-center fs-3 mb-4">
-            <Placeholder col={8} height="20px" />
+            <Placeholder col={6} height="20px" />
           </h1>
 
           <div className={styles.content + " bg-light border p-4"}>
-            <div className="mb-2">
-              <Placeholder col={7} height="15px" />
-              <Placeholder col={8} height="15px" />
-              <Placeholder col={9} height="15px" />
-            </div>
-            <div className="mb-2">
-              <Placeholder col={7} height="15px" />
-              <Placeholder col={8} height="15px" />
-              <Placeholder col={9} height="15px" />
-            </div>{" "}
-            <div className="mb-2">
-              <Placeholder col={7} height="15px" />
-              <Placeholder col={8} height="15px" />
-              <Placeholder col={9} height="15px" />
-            </div>{" "}
-            <div className="mb-2">
-              <Placeholder col={7} height="15px" />
-              <Placeholder col={8} height="15px" />
-              <Placeholder col={9} height="15px" />
-            </div>{" "}
-            <div className="mb-2">
-              <Placeholder col={7} height="15px" />
-              <Placeholder col={8} height="15px" />
-              <Placeholder col={9} height="15px" />
+            <div className="d-flex justify-content-center">
+              <div className="spinner-border text-secondary" role="status">
+                <span className="sr-only">Loading...</span>
+              </div>
             </div>
           </div>
         </div>

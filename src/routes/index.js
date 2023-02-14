@@ -128,7 +128,7 @@ const routes = [
     element: <Article />,
   },
   {
-    path: "dieu-khoan/:typeOfTerm",
+    path: "dieu-khoan/:slug",
     element: <Term />,
   },
   {
