@@ -1,0 +1,262 @@
+{
+  "translation": {
+    "header": {
+      "topBar": {
+        "language": "Ngôn ngữ"
+      },
+      "navBar": {
+        "home": "Trang chủ",
+        "about": "Giới thiệu",
+        "viTours": "Du lịch trong nước",
+        "euTours": "Du lịch châu Âu",
+        "visaService": "Dịch vụ visa",
+        "guides": "Guides"
+      }
+    },
+    "footer": {
+      "other": {
+        "issuedBy": "Do",
+        "issuedOn": "cấp ngày"
+      },
+      "services": {
+        "title": "DU LỊCH",
+        "content": {
+          "euTours": "Du lịch châu Âu",
+          "vnTours": "Du lịch trong nước",
+          "guides": "Guides",
+          "visa": "Dịch vụ visa"
+        }
+      },
+      "terms": {
+        "title": "ĐIỀU KHOẢN",
+        "content": {
+          "registration": "Điều kiện đăng ký",
+          "cancellation": "Điều kiện hủy đổi",
+          "notes": "Thông tin cần lưu ý",
+          "payment": "Phương thức thanh toán",
+          "privacy": "Bảo mật dữ liệu khách hàng"
+        }
+      },
+      "links": {
+        "title": "LIÊN KẾT",
+        "content": {
+          "facebook": "Facebook",
+          "instagram": "Instagram",
+          "youtube": "Youtube"
+        }
+      }
+    },
+    "homePage": {
+      "intro": {
+        "highClassService": {
+          "title": "Dịch vụ đẳng cấp",
+          "content": "Chúng tôi cam kết đem lại cho quý khách những dịch vụ uy tín nhất về lữ hành, khách sạn và nghỉ dưỡng, đảm bảo các tiêu chuẩn quốc tế về an toàn trong toàn bộ hành trình."
+        },
+        "impressiveJourney": {
+          "title": "Hành trình ấn tượng",
+          "content": "Không chỉ là khám phá những địa danh nổi tiếng hay thắng cảnh độc đáo, hành trình cùng JOYA còn đem tới những trải nghiệm đáng nhớ về phong tục, văn hóa, ẩm thực và nhiều câu chuyện lịch sử thú vị xoay quanh các điểm đến."
+        },
+        "trustedPartner": {
+          "title": "Đối tác tin cậy",
+          "content": "Với đội ngũ nhân viên chuyên nghiệp và chu đáo, JOYA luôn sẵn sàng hỗ trợ quý khách trong mọi trường hợp và tận tình chăm sóc khách hàng xuyên suốt các hành trình."
+        }
+      },
+      "products": {
+        "euTours": "Du lịch châu Âu",
+        "vnTours": "Du lịch trong nước",
+        "guides": "Guides"
+      },
+      "button": {
+        "seeAll": "Xem tất cả"
+      }
+    },
+    "tourPages": {
+      "filter": {
+        "newest": "Mới nhất",
+        "priceAscending": "Giá tăng dần",
+        "priceDescending": "Giá giảm dần",
+        "durationAscending": "Số ngày lưu trú tăng dần",
+        "durationDescending": "Số ngày lưu trú giảm dần"
+      },
+      "euTours": {
+        "title": "Du lịch châu Âu"
+      },
+      "vnTours": {
+        "title": "Du lịch trong nước"
+      }
+    },
+    "guidesPage": {
+      "title": {
+        "nicePlaces": "Điểm đến hấp dẫn",
+        "handbooks": "Cẩm nang du lịch",
+        "experiences": "Trải nghiệm - Khám phá",
+        "diaries": "Nhật ký hành trình"
+      },
+      "button": {
+        "seeAll": "Xem tất cả"
+      }
+    },
+    "visaServicesPage": {},
+    "tourDetailPage": {
+      "sideBar": {
+        "bookTour": "Đặt tour",
+        "contactForConsultation": "Liên hệ tư vấn",
+        "contactInfo": "Thông tin liên hệ",
+        "pickingDateModal": {
+          "available": "Còn hàng",
+          "soldOut": "Đã bán hết"
+        },
+        "bookingModal": {
+          "book": "Đăng ký"
+        },
+        "contactModal": {
+          "callMeBack": "Yêu cầu gọi lại"
+        }
+      },
+      "tourDetail": {
+        "overview": {
+          "title": "Tổng quan",
+          "tourName": "Hành trình",
+          "tourCode": "Mã tour",
+          "itinerary": "Lộ trình",
+          "countries": "Nước",
+          "duration": "Thời gian",
+          "fullPackage": "Giá trọn gói",
+          "description": "Mô tả",
+          "highlights": "Điểm nhấn"
+        },
+        "itinerary": {
+          "title": "Lộ trình"
+        },
+        "pricePolicy": {
+          "title": "Bảng giá",
+          "includes": "Các khoản bao gồm",
+          "excludes": "Các khoản không bao gồm",
+          "childrenAndOther": "Bảng giá cho trẻ em và phụ phí"
+        },
+        "terms": {
+          "title": "Điều khoản",
+          "registration": "Điều kiện đăng ký",
+          "cancellation": "Điều kiện hủy đổi",
+          "paymentMethods": "Phương thức thanh toán",
+          "notes": "Thông tin cần lưu ý"
+        },
+        "rating": {
+          "title": "Đánh giá",
+          "fromOurCurrentCustomers": "Từ các khách hàng đáng quý của chúng tôi",
+          "noReview": "Hiện chưa có đánh giá nào"
+        }
+      },
+      "errors": {
+        "notFound": "Tour không tồn tại"
+      }
+    },
+    "notFoundPage": {
+      "title": "Trang không tồn tại | Joya Travel",
+      "messagePart1": "Trang bạn yêu cầu",
+      "messagePart2": "không tồn tại",
+      "goHomeButton": "Về trang chủ",
+      "goBackButton": "Quay lại"
+    },
+    "components": {
+      "calendar": {
+        "notAvailableNextMonth": "Không có hàng ở tháng sau",
+        "notAvailablePrevMonth": "Không có hàng ở tháng trước",
+        "pickDepartureDate": "Chọn ngày khởi hành"
+      },
+      "form": {
+        "title": {
+          "callMe": "Yêu cầu tư vấn"
+        },
+        "firstname": "Họ",
+        "surname": "Tên",
+        "phoneNumber": "Số điện thoại",
+        "gender": "Giới tính",
+        "male": "Nam",
+        "female": "Nữ",
+        "other": "Khác",
+        "address": "Địa chỉ",
+        "departureDate": "Ngày khởi hành",
+        "adults": "Số người lớn",
+        "children": "Số trẻ em",
+        "pleaseChooseGender": "Vui lòng chọn giới tính",
+        "bookNow": "Đặt tour ngay",
+        "errors": {
+          "tooShort": "Quá ngắn",
+          "tooLong": "Quá dài",
+          "required": "Bắt buộc",
+          "invalidEmail": "Email không hợp lệ",
+          "invalidPhone": "Số điện thoại không hợp lệ",
+          "bookFailed": "Có lỗi xảy ra. Vui lòng thử lại, hoặc yêu cầu gọi lại, hoặc liên hệ với chúng tôi theo số: 123456789",
+          "callMeBack": "Có lỗi xảy ra. Vui lòng thử lại, hoặc yêu cầu gọi lại, hoặc liên hệ với chúng tôi theo số: 123456789"
+        },
+        "success": {
+          "bookSuccess": "Đặt tour thành công",
+          "callMeBack": "Yêu cầu gọi lại thành công. Chúng tôi sẽ liên hệ với bạn trong vòng 2 giờ."
+        }
+      },
+      "pagination": {
+        "go": "Đi tới"
+      }
+    },
+    "general": {
+      "day": "ngày",
+      "night": "đêm",
+      "days": "ngày",
+      "nights": "đêm",
+      "handBooks": "Cẩm nang du lịch",
+      "diaries": "Nhật ký hành trình",
+      "experiences": "Trải nghiệm - Khám phá",
+      "nicePlaces": "Điểm đến hấp dẫn",
+      "fullPackage": "Trọn gói",
+      "language": "Ngôn ngữ",
+      "address": "Địa chỉ",
+      "phoneNumber": "Điện thoại",
+      "licenseNumber": "Số giấy phép",
+      "destinations": "Điểm đến",
+      "duration": "Thời gian",
+      "departurePoint": "Điểm khởi hành",
+      "departureDates": "Ngày khởi hành",
+      "contactInfo": "Liên hệ"
+    },
+    "errorMessage": {
+      "offline": "Bạn đang offline. Vui lòng kiểm tra kết nối internet.",
+      "networkError": "Lỗi kết nối: có thể server đã sập."
+    },
+    "search": {
+      "tour": {
+        "title": "Tìm kiếm tour",
+        "placholder": "Nước, tỉnh, thành phố, địa điểm",
+        "notMatch": "Không tìm thấy kết quả phù hợp",
+        "seeAll": "Xem tất cả",
+        "result": "kết quả",
+        "results": "kết quả"
+      }
+    },
+    "pageTitles": {
+      "home": "Trang chủ | Joya Travel",
+      "tours": {
+        "euTours": "Du lịch châu Âu | Joya Travel",
+        "vnTours": "Du lịch trong nước | Joya Travel",
+        "tourDetail": "| Joya Travel"
+      },
+      "guides": {
+        "guides": "Guides | Joya Travel",
+        "handbooks": "Cẩm nang du lịch | Joya Travel",
+        "diaries": "Nhật ký hành trình | Joya Travel",
+        "experiences": "Trải nghiệm - Khám phá | Joya Travel",
+        "nicePlaces": "Điểm đến hấp dẫn | Joya Travel"
+      },
+      "about": "Giới thiệu | Joya Travel",
+      "notFound": {
+        "routeNotFound": "Trang không tồn tại"
+      }
+    },
+    "buttons": {
+      "seeAll": "Xem tất cả",
+      "bookTour": "Đặt tour",
+      "contactUs": "Liên hệ tư vấn",
+      "callMe": "Gọi lại cho tôi"
+    }
+  }
+}

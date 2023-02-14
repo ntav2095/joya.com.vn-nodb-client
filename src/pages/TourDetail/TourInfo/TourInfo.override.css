@@ -1,0 +1,10 @@
+.tourInfo .nav-item button {
+  color: #838383;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  width: 100%;
+}
+
+.tourInfo .nav-item button.active {
+  color: #141414;
+}

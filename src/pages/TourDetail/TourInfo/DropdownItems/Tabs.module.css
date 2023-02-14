@@ -1,0 +1,38 @@
+.tabItem .body {
+  max-height: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  transition: 0.5s;
+}
+
+.tabItem.active .body {
+  max-height: 2000px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 4px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header h5 {
+  font-size: 15px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.toggleBtn {
+  background: transparent;
+  transition: 0.2s;
+}
+
+.toggleBtn svg {
+  width: 20px;
+  stroke-width: 2;
+}
+
+.tabItem.active .toggleBtn {
+  transform: rotate(-180deg);
+}

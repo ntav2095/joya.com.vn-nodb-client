@@ -1,0 +1,6 @@
+.border {
+  border-radius: 10px;
+  /* box-shadow: 2px 2px rgb(59, 58, 58);
+     */
+  border: 1px solid #ccc;
+}

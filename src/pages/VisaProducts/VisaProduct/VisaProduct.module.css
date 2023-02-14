@@ -1,0 +1,22 @@
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.chooseBtn {
+  padding: 8px 0;
+  width: 160px;
+  background: #000;
+  color: white;
+  border: 1px solid #000;
+  border-radius: 999px;
+  transition: 0.1s;
+}
+
+.chooseBtn.active {
+  background: white;
+  color: #000;
+}

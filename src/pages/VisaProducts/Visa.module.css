@@ -1,0 +1,16 @@
+.products {
+  padding: 5px;
+
+  list-style: none;
+}
+.products li {
+  background: #fff;
+  padding: 25px 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: solid 1px #e6e6e6;
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 30px;
+}

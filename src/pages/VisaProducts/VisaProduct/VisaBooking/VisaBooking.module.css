@@ -1,0 +1,44 @@
+.bookBtn {
+  padding: 8px 60px;
+  border-radius: 6px;
+  color: white;
+  background: #000;
+}
+
+.plusBtn {
+  color: white;
+  font-size: 16px;
+  border-radius: 50%;
+  background: rgb(236, 67, 37);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin: 0 8px;
+  /* line-height: 22px; */
+}
+
+.datePicker {
+  text-align: center;
+  width: 100%;
+  padding: 4px;
+  background: rgb(247, 249, 250);
+}
+
+/* ================= modal ================  */
+.form label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.form label h6 {
+  margin-bottom: 2px;
+}
+
+.form label input:not([type="checkbox"]) {
+  padding: 4px 6px;
+  width: 100%;
+}

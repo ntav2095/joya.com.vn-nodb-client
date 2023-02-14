@@ -1,0 +1,75 @@
+.steps {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.steps h2 {
+  padding-bottom: 32px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.steps ul {
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.steps ul li {
+  border: 3px dashed #08a143;
+  border-radius: 16px;
+  padding: 15px;
+  position: relative;
+  padding-top: 32px;
+  text-align: center;
+  width: calc(25% - 30px);
+}
+
+@media screen and (max-width: 850px) {
+  .steps ul li {
+    width: calc(50% - 15px);
+  }
+  img.banner {
+    width: 100vw;
+    height: 350px;
+    object-fit: cover;
+    object-position: 72% 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .steps ul li {
+    width: 100%;
+  }
+}
+
+.steps .num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: #04b582;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.steps .name {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.steps .desc {
+  font-size: 15px;
+}

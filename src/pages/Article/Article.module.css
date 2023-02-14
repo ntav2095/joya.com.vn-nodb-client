@@ -1,0 +1,128 @@
+.breadCrumb:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  width: 100%;
+  height: 0;
+  padding-top: 40%;
+  position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  .banner {
+    padding-top: 60%;
+  }
+}
+
+.banner .inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.banner .inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.author {
+  display: flex;
+  gap: 10px;
+  padding: 40px 0 60px;
+}
+
+@media screen and (max-width: 992px) {
+  .author {
+    padding: 20px 0 30px;
+  }
+}
+
+.nameLetter {
+  background: #191919;
+  color: white;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border-radius: 50%;
+  text-transform: uppercase;
+}
+
+.author .info {
+  flex: 1;
+}
+
+.author .name {
+  font-weight: 600;
+  margin-bottom: 2px;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.author .time {
+  font-size: 11px;
+  color: grey;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 36px;
+  color: rgb(51, 51, 51);
+}
+
+.quillContent img {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+.quillContent p span {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.content figcaption {
+  margin-top: 2px;
+  font-style: italic;
+  color: rgb(82, 82, 82);
+}
+
+/* =============== related articles ==================  */
+.relatedArticle {
+  border-radius: 3.8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  overflow: hidden;
+}
+
+.relatedArticle .image {
+  height: 0;
+  padding-top: 60%;
+  position: relative;
+}
+
+.relatedArticle .image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+}
+
+.relatedArticle .textBox {
+  padding: 8px;
+  color: #050505;
+}
+
+.relatedArticle .textBox p {
+  font-size: 13px;
+  color: #4f4f4f;
+}

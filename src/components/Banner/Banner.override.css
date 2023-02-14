@@ -1,0 +1,69 @@
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #b9b4b4;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bannerContainer .slick-arrow::before {
+  display: none;
+}
+
+.bannerContainer .slick-initialized .slick-slide {
+  padding: 0px !important;
+  display: block;
+}
+
+.bannerContainer .slick-arrow.slick-next {
+  right: 20px;
+}
+
+.bannerContainer .slick-arrow.slick-prev {
+  left: 20px;
+}
+
+.bannerContainer .slick-arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  border: 0.5px solid rgb(167, 166, 166);
+}
+
+.bannerContainer .slick-next svg {
+  stroke-width: 3;
+  color: black;
+  width: 17px;
+}
+
+.bannerContainer .slick-prev svg {
+  stroke-width: 3;
+  color: black;
+  width: 17px;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: white !important;
+  outline: none;
+  background: white !important;
+}
+
+.bannerContainer .slick-track,
+.bannerContainer .slick-list,
+.bannerContainer .slick-slider,
+.bannerContainer .slick-slide {
+  height: 100%;
+}
+
+.bannerContainer .slick-slide > div {
+  height: 100%;
+}

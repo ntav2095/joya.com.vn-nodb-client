@@ -1,0 +1,91 @@
+.form {
+  position: relative;
+}
+
+.spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 253, 253, 0.679);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label,
+.dateField {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.label h6,
+.label p {
+  font-size: 14px;
+  margin-bottom: 2px;
+  font-weight: 400;
+}
+
+.label p {
+  color: red;
+  font-size: 13px;
+}
+
+.label input,
+.label select,
+.label option {
+  display: block;
+  width: 100%;
+  padding: 4px 6px;
+  border-radius: 3.8px;
+  height: 30px;
+}
+
+.form .gendersGroup .label {
+  padding: 6px;
+  border-radius: 3.8px;
+  gap: 8px;
+}
+
+.gendersGroup .label input {
+  width: auto;
+}
+
+/* ============= date field =======  */
+.dateField {
+  position: relative;
+}
+
+.dateField input {
+  cursor: pointer;
+  caret-color: transparent;
+}
+
+.dateField input::placeholder {
+  color: #050505;
+}
+
+.calendar {
+  position: absolute;
+  top: calc(100% + 2px);
+  width: calc(100vw - 70px);
+  max-width: 300px;
+  background: white;
+  margin-bottom: 16px;
+}
+
+.form option[value=""][disabled] {
+  display: none;
+}
+.form option {
+  color: black;
+}
+
+.form select {
+  color: grey;
+}
+
+.errorMessage {
+  font-size: 14px;
+}

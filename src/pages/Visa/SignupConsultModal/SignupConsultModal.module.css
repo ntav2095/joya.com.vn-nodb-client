@@ -1,0 +1,39 @@
+.header {
+  color: #0656e9;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.header span {
+  color: #0656e9;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form label {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.label {
+  margin-bottom: 6px;
+}
+
+.form label input {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 8px;
+}
+
+.form label p:last-child {
+  color: red;
+  padding-top: 6px;
+}

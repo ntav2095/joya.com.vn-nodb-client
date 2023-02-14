@@ -1,0 +1,83 @@
+.tabItem {
+  position: relative;
+  padding-left: 16px;
+  padding-top: 10px;
+  border-left: 3px dashed #6a6a6a;
+}
+
+.itinerary .tabItem:first-of-type::before {
+  top: 0;
+}
+
+.tabItem::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #050505;
+  border-radius: 50%;
+  background: white;
+  top: 10px;
+  left: 0;
+  transform: translateX(calc(-50% - 1.5px));
+}
+
+.tabItem .body {
+  max-height: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  padding-top: 16px;
+  transition: 0.8s;
+}
+
+.tabItem.active .body {
+  max-height: 1000px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.header h6 {
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 4px;
+  margin: 0;
+}
+
+.header h5 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.toggleBtn {
+  background: transparent;
+  transition: 0.2s;
+}
+
+.toggleBtn svg {
+  width: 20px;
+  stroke-width: 2;
+}
+
+.tabItem.active .toggleBtn {
+  transform: rotate(-180deg);
+}
+
+.slider {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.itinerary .tabItem:first-of-type {
+  padding-top: 0;
+}

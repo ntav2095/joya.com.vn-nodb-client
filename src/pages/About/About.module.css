@@ -1,0 +1,102 @@
+.image {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.image img {
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.about h3 {
+  font-size: 26px;
+  margin-bottom: 13px;
+  color: #555;
+  line-height: 1.3;
+}
+
+.about p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+  margin: 0 0 1em;
+  line-height: 1.4285em;
+}
+
+.content {
+  max-width: 1200px;
+  width: calc(100vw - 32px);
+  padding: 8px;
+  margin: auto auto 20px auto;
+  padding-top: 0;
+}
+
+.slogan {
+  padding: 60px 8px;
+}
+
+.content h1 {
+  line-height: 55px;
+  white-space: nowrap;
+}
+
+.aboutDescription {
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.122) 0px 3px 8px;
+  transform: translateX(100px);
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (max-width: 767.9px) {
+  .aboutDescription {
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.122) 0px 3px 8px;
+    transform: translateX(0);
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.descriptionImage {
+  height: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.descriptionImage::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, 0.167);
+}
+
+.descriptionImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.links h5:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.links img {
+  cursor: pointer;
+}
+
+.content iframe {
+  width: 100%;
+  height: 300px;
+  border: 0.5px solid #ccc;
+  border-radius: 6px;
+}

@@ -1,0 +1,74 @@
+.form {
+  position: relative;
+}
+
+.spinner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.66);
+  z-index: 999;
+}
+
+.label,
+.dateField {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.label h6,
+.label h5 {
+  font-size: 14px;
+  margin-bottom: 2px;
+  font-weight: 400;
+}
+
+.label h5 {
+  font-size: 13px;
+  color: red;
+}
+
+.label input {
+  width: 100%;
+  padding: 4px 6px;
+  border-radius: 3.8px;
+}
+
+.form .gendersGroup .label {
+  padding: 6px;
+  border-radius: 3.8px;
+  gap: 8px;
+}
+
+.gendersGroup .label input {
+  width: auto;
+}
+
+/* ============= date field =======  */
+.dateField {
+  position: relative;
+}
+
+.dateField input {
+  cursor: pointer;
+  caret-color: transparent;
+}
+
+.dateField input::placeholder {
+  color: #050505;
+}
+
+.calendar {
+  position: absolute;
+  top: calc(100% + 2px);
+  width: calc(100vw - 70px);
+  max-width: 300px;
+  background: white;
+  padding-bottom: 40px;
+  background: transparent;
+}

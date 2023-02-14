@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: 1px solid #ccc;
+  transition: 0.1s;
+}
+
+.closeBtn:hover {
+  background: rgb(240, 101, 101);
+  border: 1px solid rgb(229, 83, 83);
+
+  color: white;
+}

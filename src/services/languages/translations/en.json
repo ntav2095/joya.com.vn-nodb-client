@@ -1,0 +1,267 @@
+{
+  "translation": {
+    "header": {
+      "topBar": {
+        "language": "Language"
+      },
+      "navBar": {
+        "home": "Home",
+        "about": "About",
+        "viTours": "Vietnam Tours",
+        "euTours": "Europe Tours",
+        "visaService": "Visa services",
+        "guides": "Guides"
+      }
+    },
+    "footer": {
+      "other": {
+        "issuedBy": "Issued by",
+        "issuedOn": "on"
+      },
+      "services": {
+        "title": "TRAVEL",
+        "content": {
+          "euTours": "Europe tours",
+          "vnTours": "Vietnam tours",
+          "guides": "Guides",
+          "visa": "Visa services"
+        }
+      },
+      "terms": {
+        "title": "TERMS",
+        "content": {
+          "registration": "Registration Conditions",
+          "cancellation": "Cancellation policy",
+          "notes": "Notes",
+          "payment": "Payment methods",
+          "privacy": "Privacy policy"
+        }
+      },
+      "links": {
+        "title": "LINKS",
+        "content": {
+          "facebook": "Facebook",
+          "instagram": "Instagram",
+          "youtube": "Youtube"
+        }
+      }
+    },
+    "homePage": {
+      "intro": {
+        "highClassService": {
+          "title": "High-class service",
+          "content": "We are committed to providing you with the most prestigious services in travel, hotels and resorts, ensuring international standards of safety during the entire journey."
+        },
+        "impressiveJourney": {
+          "title": "Impressive journey",
+          "content": "Not only discovering famous landmarks or unique landscapes, the journey with JOYA also brings memorable experiences about customs, culture, cuisine and many interesting historical stories revolving around the destinations. ."
+        },
+        "trustedPartner": {
+          "title": "Trusted partner",
+          "content": "With a team of professional and attentive staff, JOYA is always ready to support you in all cases and take care of customers throughout the journey."
+        }
+      },
+      "products": {
+        "euTours": "Europe Tours",
+        "vnTours": "Vietnam Tours",
+        "guides": "Guides"
+      },
+      "button": {
+        "seeAll": "See all"
+      }
+    },
+    "tourPages": {
+      "filter": {
+        "newest": "Newest",
+        "priceAscending": "Price ascending",
+        "priceDescending": "Price descending",
+        "durationAscending": "Duration ascending",
+        "durationDescending": "Duration descending"
+      },
+      "euTours": {
+        "title": "Europe Tours"
+      },
+      "vnTours": {
+        "title": "Vietnam Tours"
+      }
+    },
+    "guidesPage": {
+      "title": {
+        "nicePlaces": "Nice Places",
+        "handbooks": "Travel Handbooks",
+        "experiences": "Travel Experiences",
+        "diaries": "Travel Diaries"
+      },
+      "button": {
+        "seeAll": "See all"
+      }
+    },
+    "visaServicesPage": {},
+    "tourDetailPage": {
+      "sideBar": {
+        "destinations": "Destinations",
+        "duration": "Duration",
+        "depaturePoint": "Departure point",
+        "departureDates": "Departure Dates",
+        "bookTour": "Book",
+        "contactForConsultation": "Contact",
+        "contactInfo": "Contact Info",
+        "pickingDateModal": {
+          "available": "Available",
+          "soldOut": "Sold out"
+        },
+        "bookingModal": {
+          "book": "Book"
+        },
+        "contactModal": {
+          "callMeBack": "Call me back"
+        }
+      },
+      "tourDetail": {
+        "overview": {
+          "title": "Overview",
+          "tourName": "Name",
+          "tourCode": "code",
+          "itinerary": "Itinerary",
+          "countries": "Countries",
+          "duration": "Duration",
+          "fullPackage": "Full package",
+          "description": "Description",
+          "highlights": "Highlights"
+        },
+        "itinerary": {
+          "title": "Itinerary"
+        },
+        "pricePolicy": {
+          "title": "Price",
+          "includes": "Price includes",
+          "excludes": "Price excludes",
+          "childrenAndOther": "Price for children and extra charge"
+        },
+        "terms": {
+          "title": "Terms",
+          "registration": "Registration Policy",
+          "cancellation": "Cancellation Policy",
+          "paymentMethods": "Payment Methods",
+          "notes": "Notes"
+        },
+        "rating": {
+          "title": "Rating",
+          "fromOurCurrentCustomers": "From our current customers",
+          "noReview": "There are currently no reviews yet"
+        }
+      },
+      "errors": {
+        "notFound": "Tour Not Found"
+      }
+    },
+    "notFoundPage": {
+      "title": "Page Not Found | Joya Travel",
+      "messagePart1": "THE PAGE YOU REQUESTED",
+      "messagePart2": "COULD NOT BE FOUND",
+      "goHomeButton": "Go to home",
+      "goBackButton": "Go back"
+    },
+    "components": {
+      "calendar": {
+        "notAvailableNextMonth": "No availabe dates in next month",
+        "notAvailablePrevMonth": "No availabe dates in previous month",
+        "pickDepartureDate": "Pick departure date"
+      },
+      "form": {
+        "title": {
+          "callMe": "Contact me"
+        },
+        "firstname": "First name",
+        "surname": "Surname",
+        "phoneNumber": "Phone number",
+        "gender": "Gender",
+        "male": "Male",
+        "female": "Female",
+        "other": "Other",
+        "address": "Address",
+        "departureDate": "Departure dates",
+        "adults": "Adults",
+        "children": "Children",
+        "pleaseChooseGender": "Please choose gender",
+        "bookNow": "Book now",
+        "errors": {
+          "tooShort": "Too short",
+          "tooLong": "Too long",
+          "required": "Required",
+          "invalidEmail": "Invalid Email",
+          "invalidPhone": "Invalid phone number",
+          "bookFailed": "Something wrong happens. Please try again, or contact us: 123456789",
+          "callMeBack": "Something wrong happens. Please try again, or contact us: 123456789"
+        },
+        "success": {
+          "bookSuccess": "Booked succecssfully. We will contact you in 2 hours.",
+          "callMeBack": "Requested successfully. We will contact you in 2 hours."
+        }
+      },
+      "pagination": {
+        "go": "Go"
+      }
+    },
+    "general": {
+      "day": "day",
+      "night": "night",
+      "days": "days",
+      "nights": "nights",
+      "handBooks": "Travel handbooks",
+      "diaries": "Travel diaries",
+      "experiences": "Travel experiences",
+      "nicePlaces": "Nice places",
+      "fullPackage": "Full package",
+      "language": "Language",
+      "address": "Address",
+      "phoneNumber": "Phone number",
+      "licenseNumber": "License number",
+      "destinations": "Destinations",
+      "duration": "Duration",
+      "departurePoint": "Point of departure",
+      "departureDates": "Departure dates",
+      "contactInfo": "Contact"
+    },
+    "errorMessage": {
+      "offline": "Bạn đang offline. Vui lòng kiểm tra kết nối internet.",
+      "networkError": "Lỗi kết nối: có thể server đã sập."
+    },
+    "search": {
+      "tour": {
+        "title": "Search for tours",
+        "placholder": "Country, province, city, place",
+        "notMatch": "Not match any tours",
+        "seeAll": "See all",
+        "result": "result",
+        "results": "results"
+      }
+    },
+    "pageTitles": {
+      "home": "Home | Joya Travel",
+      "tours": {
+        "euTours": "Europe Tours | Joya Travel",
+        "vnTours": "Vietnam Tours | Joya Travel",
+        "tourDetail": "| Joya Travel"
+      },
+      "guides": {
+        "guides": "Guides | Joya Travel",
+        "handbooks": "Travel Handbooks | Joya Travel",
+        "diaries": "Travel Diaries | Joya Travel",
+        "experiences": "Travel Experiences | Joya Travel",
+        "nicePlaces": "Nice places | Joya Travel"
+      },
+      "about": "About Joya | Joya Travel",
+
+      "notFound": {
+        "routeNotFound": "Page Not Found | Joya Travel"
+      }
+    },
+    "buttons": {
+      "seeAll": "See all",
+      "bookTour": "Book",
+      "contactUs": "Contact Us",
+      "callMe": "Contact me"
+    }
+  }
+}
