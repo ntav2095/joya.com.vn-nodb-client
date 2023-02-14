@@ -6,7 +6,6 @@ import GoToTop from "./components/GoToTop";
 import { liveChat } from "./containers/Livechat";
 import DefaultLayout from "./layout/DefaultLayout";
 import routes from "./routes";
-// import useLazyLoading from "./hooks/useLazyLoading";
 import { fetchTours } from "./store/tours.slice";
 import { fetchGuides } from "./store/guides.slice";
 import { getCompanyInfo } from "./store/company.slice";
@@ -105,8 +104,6 @@ function App() {
             </Route>
           </Route>
         )}
-
-        {/* <Route path="*" element={<h1>404</h1>} /> */}
       </Routes>
     </>
   );
